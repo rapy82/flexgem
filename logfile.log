@@ -1,0 +1,111 @@
+# Logfile created on 2014-08-13 15:52:00 +0200 by logger.rb/41954
+I, [2014-08-13T15:52:00.098448 #17138]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:52:32.003027 #17146]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:52:32.114656 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.114947 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.115149 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.115342 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.115537 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.115725 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.115918 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.116107 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.116297 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.116494 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.116679 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.116840 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.117020 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.117217 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.117506 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.117700 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:32.117835 #17146]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.602292 #17153]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:52:57.718990 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.719265 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.719440 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.719606 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.719763 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.719914 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720067 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720217 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720368 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720523 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720670 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720821 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.720969 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.721123 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.721273 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.721485 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:52:57.721612 #17153]  INFO -- : Calling method
+I, [2014-08-13T15:56:00.564913 #17166]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:56:00.675069 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.675321 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.675478 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.675641 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.675788 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.675934 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676080 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676226 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676372 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676519 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676676 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676824 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.676969 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.677117 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.677263 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.677575 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:56:00.677839 #17166]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.199484 #17209]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:57:00.317055 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.432411 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.546304 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.661762 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.775469 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:00.920282 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:01.050179 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:01.200101 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:01.314737 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:57:01.463684 #17209]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.286617 #17218]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T15:58:07.396676 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.506402 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.629996 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.758704 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.872755 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:07.999510 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.109720 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.222700 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.355703 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.467306 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.604885 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.726247 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.839479 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:08.951946 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:09.082077 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:09.193656 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T15:58:09.314724 #17218]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:13.454598 #17355]  INFO -- : Current Working Directory: /home/rapy/workspace/netpolaris/rails/flexgem
+I, [2014-08-13T16:07:13.578463 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:13.708870 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:13.838153 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:13.971346 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.096656 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.205670 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.331102 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.453808 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.579503 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.691808 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.858779 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:14.973076 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.098612 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.210292 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.321857 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.445444 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.557744 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.668185 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.786648 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:15.897883 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:16.034535 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:16.168743 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:16.287163 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:16.399173 #17355]  INFO -- : Initializing method :method
+I, [2014-08-13T16:07:16.511933 #17355]  INFO -- : Initializing method :method

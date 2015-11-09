@@ -1,0 +1,22 @@
+flexmod_serial: "/dev/ttyUSB0"
+flexmod_commands: 
+  - 
+      command: "MOD_FREQUENCY"
+      readable_name: "Frequency"
+      flexgem_module: "Modulator"
+      read_method: "read_frequency"
+  - 
+      command: "MOD_SPECTRUM"
+      readable_name: "Spettro"
+      flexgem_module: "Modulator"
+      read_method: "read_spectrum"
+  - 
+      command: "MOD_RFPOWER"
+      readable_name: "RF Power"
+      flexgem_module: "Modulator"
+      read_method: "read_rfpower"
+  - 
+      command: "MOD_MODE"
+      readable_name: "Mode"
+      flexgem_module: "Modulator"
+      read_method: "read_mode"

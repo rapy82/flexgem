@@ -1,0 +1,306 @@
+module Flexgem::Modulator
+	
+	$baud_command = 'BAUD'
+	$rfpower_command = 'MOD_RFPOWER'
+	$frequency_command = 'MOD_FREQUENCY'
+	$mode_command = 'MOD_MODE'
+	$spectrum_command = 'MOD_SPECTRUM'
+	$preenphasis_command = 'MOD_PREENPHASIS'
+	$maxdev_command = 'MOD_MAXDEV_KHZ'
+	$ext_mpx_gain_command = 'MOD_EXT_MPX_GAIN'
+	$ext_sca_gain_command = 'MOD_EXT_SCA_GAIN'
+	$rds_level_command = 'MOD_RDS_LEVEL'
+	$mpx_level_command = 'MOD_MPX_LEVEL'
+	$input_gain_command = 'MOD_INPUTGAIN'
+
+	def self.read_baud_rate
+		command = $baud_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+
+  def self.update_baud_rate
+  	command = $baud_command
+    response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+  end 
+	
+	def self.write_baud_rate(baud)
+		command = $baud_command
+		response = Flexgem::Comm.submit_command(command,baud)
+		response["values"].first
+	end
+	
+	def self.read_rfpower
+	  command = $rfpower_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+	
+	def self.update_rfpower
+		command = $rfpower_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_rfpower(rfpower)
+		command = $rfpower_command
+		response = Flexgem::Comm.submit_command(command,rfpower)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_frequency
+		command = $frequency_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+	
+	def self.update_frequency
+		command = $frequency_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+
+	def self.read_if_frequency
+		response = Flexgem::Comm.read_command_value ($frequency_command)
+		response["values"].last
+	end
+	
+	def self.update_if_frequency
+		response = Flexgem::Comm.submit_command($frequency_command)
+		response["values"].last
+	end
+	
+	def self.write_frequency(rf_freq,if_freq = nil)
+		command = $frequency_command
+		rf_freq = "%0.1f" %[rf_freq]
+		
+		if !if_freq.nil? && !if_freq.empty? 
+			if_freq = "%0.1f" %[if_freq]
+			response = Flexgem::Comm.submit_command(command,rf_freq,if_freq)
+		else
+			response = Flexgem::Comm.submit_command(command,rf_freq)
+		end
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_mode
+		command = $mode_command
+		response = Flexgem::Comm.rad_command(command)
+		response["values"].first
+	end
+  
+	def self.update_mode
+		command = $mode_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.read_mode_message
+		command = $mode_command
+		response = Flexgem::Comm.read_command(command)
+		response["messages"].first
+	end
+  
+	def self.update_mode_message
+		command = $mode_command
+		response = Flexgem::Comm.submit_command(command)
+		response["messages"].first
+	end
+	
+	def self.write_mode(mode)
+		command = $mode_command
+		response = Flexgem::Comm.submit_command(command,mode)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_spectrum
+		command = $spectrum_command
+		response = Flexgem::Comm.read_command(command)
+		response["values"].first
+	end
+  
+	def self.update_spectrum
+		command = $spectrum_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_spectrum(spectrum)
+		command = $spectrum_command
+		response = Flexgem::Comm.submit_command(command,spectrum)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_pre_enphasis
+		command = $preenphasis_command
+		response = Flexgem::Comm.read_command(command)
+		response["values"].first
+	end
+  
+	def self.update_pre_enphasis
+		command = $preenphasis_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_pre_enphasis(pre_enphasis)
+		command = $preenphasis_command
+		response = Flexgem::Comm.submit_command(command,pre_enphasis)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_max_dev
+		command = $maxdev_command
+		response = Flexgem::Comm.read_command(command)
+		response["values"].first
+	end
+  
+	def self.update_max_dev
+		command = $maxdev_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_max_dev(pre_max_dev)
+		command = $maxdev_command
+		response = Flexgem::Comm.submit_command(command,max_dev)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_ext_mpx_gain
+		command = $ext_mpx_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+	
+	def self.read_readable_ext_mpx_gain
+		command = $ext_mpx_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["messages"].first
+	end
+  
+	def self.update_readable_ext_mpx_gain
+		command = $ext_mpx_gain_command
+		response = Flexgem::Comm.submit_command_value(command)
+		response["messages"].first
+	end
+
+	def self.update_ext_mpx_gain
+		command = $ext_mpx_gain_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_ext_mpx_gain(ext_mpx_gain)
+		command = $ext_mpx_gain_command
+		response = Flexgem::Comm.submit_command(command,ext_mpx_gain)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_ext_sca_gain
+		command = $ext_sca_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+	
+	def self.update_ext_sca_gain
+		command = $ext_sca_gain_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.read_readable_ext_sca_gain
+		command = $ext_sca_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["messages"].first
+	end
+	
+	def self.update_readable_ext_sca_gain
+		command = $ext_sca_gain_command
+		response = Flexgem::Comm.submit_command(command)
+		response["messages"].first
+	end
+  
+	def self.write_readable_ext_mpx_gain(ext_mpx_gain)
+		ext_mpx_gain = 32768 * ext_mpx_gain.to_f
+		return write_ext_mpx_gain(ext_mpx_gain)
+	end
+  
+	def self.write_readable_ext_sca_gain(ext_sca_gain)
+		ext_sca_gain = 32768 * ext_sca_gain.to_f
+		return write_ext_sca_gain(ext_sca_gain)
+	end
+	
+	def self.write_ext_sca_gain(ext_sca_gain)
+		command = $ext_sca_gain_command
+		response = Flexgem::Comm.submit_command(command,ext_sca_gain)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_rds_level
+		response = Flexgem::Comm.read_command($rds_level_command)
+		response["values"].first
+	end
+  
+	def self.update_rds_level
+		response = Flexgem::Comm.submit_command($rds_level_command)
+		response["values"].first
+	end
+	
+	def self.write_rds_level(rds_level)
+		response = Flexgem::Comm.submit_command($rds_level_command,rds_level)
+		return response["result_code"] == '0'
+	end
+		
+	def self.read_mpx_level
+		response = Flexgem::Comm.read_command_value($mpx_level_command)
+		response["values"].first
+	end
+
+	def self.update_mpx_level
+		response = Flexgem::Comm.submit_command($mpx_level_command)
+		response["values"].first
+	end
+	
+	def self.write_mpx_level(mpx_level)
+		response = Flexgem::Comm.submit_command($mpx_level_command,mpx_level)
+		return response["result_code"] == '0'
+	end
+	
+	def self.read_input_gain
+		command = $input_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["values"].first
+	end
+	
+	def self.update_input_gain
+		command = $input_gain_command
+		response = Flexgem::Comm.submit_command(command)
+		response["values"].first
+	end
+	
+	def self.write_input_gain(input_gain)
+		command = $input_gain_command
+		response = Flexgem::Comm.submit_command(command,input_gain)
+		return response["result_code"] == '0'
+	end
+  
+	def self.read_readable_input_gain
+		command = $input_gain_command
+		response = Flexgem::Comm.read_command_value(command)
+		response["messages"].first
+	end
+	
+	def self.update_readable_input_gain
+		command = $input_gain_command
+		response = Flexgem::Comm.submit_command_value(command)
+		response["messages"].first
+	end
+	
+	def self.write_readable_input_gain(input_gain)
+		input_gain = 32768 * input_gain.to_f
+		return write_input_gain(input_gain)
+	end
+	
+end
